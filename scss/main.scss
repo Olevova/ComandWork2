@@ -114,18 +114,17 @@ color: wheat;
 }
 
 .header__firstnav {
-// &:hover {
-//     position: relative;
-//         // border-bottom: 2px solid wheat;
-//         transform: scale(1.2) 250ms;
-//     }
+&:hover {
+        // border-bottom: 2px solid wheat;
+        transform: scale(1.2);
+    }
 &:not(:last-child) {
     margin-right: 50px;
 }}
 
 
 
-.first__link {
+.header__link {
     position: relative;
 
     // &:hover:before {
@@ -136,19 +135,20 @@ color: wheat;
     //     }
 }
 
-.first__link::before {
+.header__link::before {
             content: " ";
             position: absolute;
             left: 0;
             bottom: -5px;
             width: 100%;
-            height: 1.5px;
-            background-color: red;
+            height: 2px;
+            background-color: wheat;
             transition: transform 0.35s;
             transform: scaleX(0);
+            transform-origin: left;
 }
 
-.first__link:hover:before {
+.header__link:hover:before {
      width: 100%;
      transform: scaleX(1);
 

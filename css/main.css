@@ -133,31 +133,37 @@ img {
   color: wheat;
 }
 
+.header__firstnav:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 .header__firstnav:not(:last-child) {
   margin-right: 50px;
 }
 
-.first__link {
+.header__link {
   position: relative;
 }
 
-.first__link::before {
+.header__link::before {
   content: " ";
   position: absolute;
   left: 0;
   bottom: -5px;
   width: 100%;
-  height: 1.5px;
-  background-color: red;
+  height: 2px;
+  background-color: wheat;
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   transition: transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
-.first__link:hover:before {
+.header__link:hover:before {
   width: 100%;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
