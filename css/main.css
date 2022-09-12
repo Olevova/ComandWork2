@@ -133,6 +133,11 @@ img {
   color: wheat;
 }
 
+.header__firstnav:hover {
+  border-bottom: 2px solid wheat;
+  -webkit-transform: scale(1.2) 250ms;
+          transform: scale(1.2) 250ms;
+}
 .header__firstnav:not(:last-child) {
   margin-right: 50px;
 }
@@ -211,6 +216,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 @media screen and (min-width: 768px) {
   .hiddenmenu.is-open {

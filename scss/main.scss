@@ -88,6 +88,8 @@ img {
     @media screen and(min-width:768px) {
         display: flex;
         align-items: center;
+        
+        
     }
     
 }
@@ -112,6 +114,10 @@ color: wheat;
 }
 
 .header__firstnav {
+&:hover {
+        border-bottom: 2px solid wheat;
+        transform: scale(1.2) 250ms;
+    }
 &:not(:last-child) {
     margin-right: 50px;
 }}
